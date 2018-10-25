@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'input', 
     loadChildren: '../app/components/input/input-decorator.module#InputDecoratorModule'
+  }, 
+  {
+    path: 'reactive', 
+    loadChildren: '../app/components/reactiveforms/reactive-forms.module#ReactiveFormsModule'
   }
 ];
 
