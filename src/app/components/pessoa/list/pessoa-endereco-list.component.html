@@ -1,0 +1,39 @@
+<div>
+  <a routerLink="/pessoa-endereco/inserir">[Pessoa] Inserir pessoa</a>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>CPF</th>
+      <th>Nome</th>
+      <th>E-mail</th>
+      <th>CEP</th>
+      <th>Logradouro</th>
+      <th>Número</th>
+      <th>Complemento</th>
+      <th>Bairro</th>
+      <th>Cidade</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pessoa of pessoas">
+      <td>{{ pessoa.cpf }}</td>
+      <td>{{ pessoa.email }}</td>
+      <td>{{ pessoa.nome }} </td>
+      <td>{{ pessoa.enderecoDto.cep }}</td>
+      <td>{{ pessoa.enderecoDto.logradouro }}</td>
+      <td>{{ pessoa.enderecoDto.numero }}</td>
+      <td>{{ pessoa.enderecoDto.complemento }}</td>
+      <td>{{ pessoa.enderecoDto.bairro }}</td>
+      <td>{{ pessoa.enderecoDto.cidade }}</td>
+      <td>{{ pessoa.enderecoDto.estado }}</td>
+      <td><button></button></td>
+      <td><button></button></td>
+    </tr>
+  </tbody>
+
+</table>
+
+

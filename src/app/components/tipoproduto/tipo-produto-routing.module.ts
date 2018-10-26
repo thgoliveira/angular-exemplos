@@ -6,6 +6,7 @@ import { TipoProdutoFormComponent } from './form/tipo-produto-form.component';
 const routes: Routes = [
   { path: '', component: TipoProdutoListComponent }, 
   { path: 'create', component: TipoProdutoFormComponent }
+
 ];
 
 @NgModule({
