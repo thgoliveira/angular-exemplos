@@ -3,10 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'tipo' },
-  {
-    path: 'tipo', 
-    loadChildren: '../app/components/tipoproduto/tipoproduto.module#TipoprodutoModule'
+  { path: '', pathMatch: 'full', redirectTo: '' },
+  { 
+    path: 'tipo-produto', 
+    loadChildren: '../app/components/tipoproduto/tipo-produto.module#TipoProdutoModule'
   }, 
   {
     path: 'input', 
